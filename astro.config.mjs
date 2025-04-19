@@ -8,9 +8,7 @@ import react from "@astrojs/react";
 import icon from "astro-icon";
 import path from "node:path";
 import vercel from '@astrojs/vercel/serverless';
-import sentry from "@sentry/astro";
 import spotlightjs from "@spotlightjs/astro";
-
 import fontPicker from "astro-font-picker";
 
 // https://astro.build/config
@@ -35,25 +33,37 @@ export default defineConfig({
       wrap: true
     }
   },
-  integrations: [mdx({
-    syntaxHighlight: "shiki",
-    shikiConfig: {
-      theme: "material-theme-palenight",
-      wrap: true
-    },
-    drafts: true
-  }), sitemap(), tailwind({
-    applyBaseStyles: false
-  }),, robotsTxt(), react(), icon({
-    iconDir: "src/assets/icons",
-    include: {
-      mdi: ["github", "arrow-right", "instagram", "twitter", "linkedin"],
-      devicon: ["git", "vscode", "docker", "linux", "javascript", "python", "java", "typescript", "c", "cplusplus", "css3", "html5", "react", "mongodb", "prisma", "tailwindcss"]
-    }
-  }), compressor({
-    gzip: true,
-    brotli: true
-  }), sentry(), spotlightjs(), fontPicker()],
+  integrations: [
+    mdx({
+      syntaxHighlight: "shiki",
+      shikiConfig: {
+        theme: "material-theme-palenight",
+        wrap: true
+      },
+      drafts: true
+    }), 
+    sitemap(), 
+    tailwind({
+      applyBaseStyles: false
+    }),
+    robotsTxt(), 
+    react(), 
+    icon({
+      iconDir: "src/assets/icons",
+      include: {
+        mdi: ["github", "arrow-right", "instagram", "twitter", "linkedin"],
+        devicon: ["git", "vscode", "docker", "linux", "javascript", "python", "java", "typescript", "c", "cplusplus", "css3", "html5", "react", "mongodb", "prisma", "tailwindcss"]
+      }
+    }), 
+    compressor({
+      gzip: true,
+      brotli: true
+    }),
+    // Temporarily removed Sentry integration to fix the headers.split error
+    // sentry(),
+    spotlightjs(), 
+    fontPicker()
+  ],
   vite: {
     resolve: {
       alias: {
