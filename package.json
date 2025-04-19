@@ -1,18 +1,18 @@
 {
-  "name": "anishshobithps.com",
+  "name": "manthanawgan.com",
   "version": "2.0.0",
-  "description": "Final year Engineering student at St. Joseph Engineering College from Mangaluru, India.",
+  "description": "First year student learning computer science",
   "license": "MIT",
   "private": true,
   "author": {
-    "name": "anishshobithps"
+    "name": "manthanawgan"
   },
-  "homepage": "https://anishshobithps.com",
+  "homepage": "https://portfolio-manthanawgan30-gmailcoms-projects.vercel.app/",
   "contributors": [
     {
-      "name": "Anish Shobith P S",
-      "email": "contact@anishshobithps.com",
-      "url": "https://anishshobithps.com"
+      "name": "Manthan Awgan",
+      "email": "manthanawgan@gmail.com",
+      "url": "https://portfolio-manthanawgan30-gmailcoms-projects.vercel.app/"
     }
   ],
   "keywords": [
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/anishshobithps/anish-shobith.github.io.git"
+    "url": "https://github.com/manthanawgan/Portfolio.git"
   },
   "scripts": {
     "dev": "astro dev",
