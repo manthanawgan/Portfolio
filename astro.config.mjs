@@ -13,19 +13,8 @@ import fontPicker from "astro-font-picker";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  site: "http://localhost:4321/",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true
-    },
-    imagesConfig: {
-      domains: ['anishshobithps.com'],
-      sizes: [320, 640, 1280]
-    },
-    devImageService: passthroughImageService(),
-    imageService: true
-  }),
+  output: "static",
+  site: "https://manthanawgan.github.io",
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -59,8 +48,6 @@ export default defineConfig({
       gzip: true,
       brotli: true
     }),
-    // Temporarily removed Sentry integration to fix the headers.split error
-    // sentry(),
     spotlightjs(), 
     fontPicker()
   ],
