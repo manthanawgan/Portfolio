@@ -1,19 +1,19 @@
 {
   "site": {
-    "title": "Anish Shobith P S",
+    "title": "Manthan-Awgan",
     "base_url": "https://anishshobithps.com",
     "base_path": "/",
-    "favicon": "/favicon.svg",
+    "favicon": "/favicon1.png",
     "lang": "en",
-    "description": "Final year Engineering student at St. Joseph Engineering College from Mangaluru, India.",
+    "description": "I am a first year student, studying computer science.",
     "pageSize": 3
   },
   "metadata": {
-    "meta_author": "Anish Shobith P S",
-    "meta_description": "Final year Engineering student at St. Joseph Engineering College from Mangaluru, India."
+    "meta_author": "Manthan Awgan",
+    "meta_description": "I am a first year student, studying computer science."
   },
   "author": {
-    "name": "Anish Shobith P S",
-    "designation": "Full Stack Developer"
+    "name": "Manthan Awgan",
+    "designation": "AI/ML Developer"
   }
 }
